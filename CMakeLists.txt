@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 3.4.1)
 
+project(Opusfile)
+
 if( ANDROID )
 	set(CMAKE_CXX_FLAGS_DEBUG "-g3 -O0")
 	set(CMAKE_C_FLAGS_DEBUG "-g3 -O0")
