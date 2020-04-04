@@ -12,6 +12,8 @@ if( ANDROID )
 	set(CMAKE_CXX_FLAGS_MINSIZEREL "-Os -s -DNDEBUG")
 	set(CMAKE_C_FLAGS_MINSIZEREL "-Os -s -DNDEBUG")
 endif()
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fPIC")
+set(CMAKE_C_FLAGS "${CMAKE_CXX_FLAGS} -fPIC")
 
 include_directories( . include ../libogg/include ../opus/include )
 
